@@ -6,3 +6,9 @@ chrome.storage.local.get('advancedMode', (result) => {
         console.log('Page visible!');
     }
 })
+
+chrome.runtime.onMessage.addListener((msg) => {
+    if (msg.action === 'lockTab') {
+        document.documentElement.style.display = "none";
+    }
+})

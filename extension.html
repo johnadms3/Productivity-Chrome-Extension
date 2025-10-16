@@ -1,0 +1,24 @@
+<!-- Create Html for pop up user interface, used to create and set alarm, and write out reminder/to-dos-->
+ <!-- We need a simple form with input field to allow user to type in what they need to be reminded of to stay Productive and a button to start the alarm.
+  We also need a input field for the user to type in how long the alarm will wait before going off-->
+  <!-- create button to set/start alarm-->
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Productivity Alarm</title>
+    <script defer src="background.js"></script>
+    <link rel="stylesheet" href="extension.css">
+  </head>
+  <body>
+    <div id = "Productivity Message"></div>
+    <!-- <form id="productivity-form"> -->
+    <div id = "Alarm timer"></div>
+      <label id = "alarm"> </label>
+      <input type = "text" id = "alarm_box" placeholder = "Set alarm timer here"> </input>
+      <label id = "To-Dos"></label>
+      <input type = "text"  id = "message_box" placeholder = "What do you need to be sure to get done?!"> </input>
+      <button id = "submit">Start Alarm</button><br>
+   <!-- </form> -->
+  </body>
+  <!-- <script src="extension.js"></script> -->
+</html>

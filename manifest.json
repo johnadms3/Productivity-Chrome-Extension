@@ -1,15 +1,21 @@
 {
-"manifest_version" : 3,
-"name" : "Popup Productivity Extension",
-"version" : "1.0",
-"description" : "An in your face productivity/reminder extension",
-"permissions" : ["alarms", "notifications", "activeTab"],
-"background" : {
-    "scripts" : ["background.js"],
-    "persistent" : false,
-    "js" : ["background.js", "extension.js"]
+    "manifest_version" : 3,
+    "name" : "Popup Productivity Extension",
+    "version" : "1.0",
+    "description" : "An in your face productivity/reminder extension",
+        "content_scripts" : [
+            {
+                "matches": ["<all_urls>"],
+                "js" : ["extension.js"]
+            }
+        ],
+    "permissions": [
+        "storage", "alarms", "notifications", "activeTab"
+    ],
+    "action": {
+        "default_popup": "extension.html",
+        "default_icon": "images/G3LpSixWkAAiaOl.jpeg",
+        "default_title": "Lock in!"
     },
-"action": {
-    "default_popup": "extension.html"
-    }
+    "options_page": "options.html"
 }

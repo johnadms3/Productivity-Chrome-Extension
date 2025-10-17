@@ -7,6 +7,7 @@ chrome.storage.local.get('advancedMode', (result) => {
     }
 })
 
+
 chrome.runtime.onMessage.addListener((msg) => {
     if (msg.action === 'lockTab') {
         // document.documentElement.style.display = "none";
@@ -16,6 +17,6 @@ chrome.runtime.onMessage.addListener((msg) => {
     <img src = "${imgURL}" alt = "Get Back to Work!" style = "max-width: 100%; height: auto;" />
   </body>
 `;
-
+//  alert(`${productivityInput.value}`);
     }
 })

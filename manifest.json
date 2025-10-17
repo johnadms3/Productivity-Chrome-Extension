@@ -17,8 +17,15 @@
     ],
     "action": {
         "default_popup": "popup.html",
-        "default_icon": "images/G3LpSixWkAAiaOl.jpeg",
+        "default_icon": "assets/RabbitTime.jpeg",
         "default_title": "Lock in!"
     },
-    "options_page": "options.html"
+    "options_page": "options.html",
+    "web_accessible_resources": [
+        {
+    "resources": ["assets/RabbitTime.jpeg"],
+    "matches": ["<all_urls>"]
+        }
+]
+
 }

@@ -4,7 +4,9 @@ const productivityInput = document.getElementById("message_box");
 
 lockBtn.addEventListener('click', () => {
     const delay = parseFloat(alarmInput.value);
-    chrome.alarms.create('lockTab', { delayInMinutes: delay });
-    setTimeout(()=> {alert(productivityInput.value)}, delay);
+    chrome.alarms.create('lockTab', { delayInMinutes: delay});
+    setTimeout(function() {
+        alert("Alarm created!");
+    }, delay);
     console.log("Alarm created!");
 })
